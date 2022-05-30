@@ -1,0 +1,137 @@
+header {
+    //Header main
+    .header__nav {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        transform: translateY(0);
+        transition: transform 200ms ease;
+    
+        .navbar-brand {
+            .logo {
+                width: 80px;
+                height: auto;
+            }
+        }
+
+        .navbar-nav {
+
+            .nav-item {
+                padding-right: 40px;
+                position: relative;
+
+                .nav-link {
+                    @include styleText($fs-1, $color-dark-1, $fw-2 );
+                    line-height: 60px;
+                    transition: all 0.2s;
+                }
+
+                &:hover {
+
+                    .nav-link {
+                        color: $color-blue-1  !important;
+                    }
+
+                    &::after {
+
+                        transform: scale(1);
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+
+                &::after {
+                    background-color: $color-blue-1;
+                    position: absolute;
+                    content: "";
+                    left: 20px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    display: block;
+                    transform: scale(0);
+                    transition: all 0.5s;
+
+                }
+
+            }
+
+            .active {
+                .nav-link {
+                    color: $color-dark-1  !important;
+                }
+
+                &::after {
+                    transform: scale(1);
+                }
+
+            }
+        }
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        transform: translateY(-100%);
+
+    }
+
+    // Header sub
+
+    .header__nav--1{
+        background-color: $color-white-3;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0 0 10px 0 #cccccc80;
+        transition: transform 200ms ease;
+        .navbar-brand {
+            display: none;
+        }
+
+        .navbar{
+            height: 50px;
+        }
+        .navbar-nav {
+            .nav-item {
+                padding-right: 40px;
+                position: relative;
+
+                &::after {
+                    background-color: $color-blue-1;
+                    position: absolute;
+                    content: "";
+                    left: 20px;
+                    top: 60px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    display: block;
+                    transform: scale(0);
+                    transition: all 0.5s;
+
+                }
+
+            }
+
+            .active {
+                .nav-link {
+                    color: $color-dark-1  !important;
+                }
+
+                &::after {
+                    transform: scale(1);
+                }
+
+            }
+        }
+
+    }
+
+}
