@@ -460,7 +460,7 @@ header .header__nav--1 .navbar-nav .active::after {
 }
 
 #footer {
-  background-image: url(../../images/footer_background.jpg);
+  background-image: url(../images/footer_background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
