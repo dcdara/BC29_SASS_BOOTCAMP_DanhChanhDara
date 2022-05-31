@@ -52,7 +52,7 @@
     margin-bottom: 100px;
     color: $color-dark-5;
     border: none;
-
+    
     &::after {
         position: absolute;
         top: 0;
@@ -72,4 +72,5 @@
         transform: scale(1);
 
     }
+
 }
