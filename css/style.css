@@ -113,6 +113,8 @@ body {
 }
 
 header .header__nav {
+  padding-left: 150px;
+  padding-right: 150px;
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -120,9 +122,41 @@ header .header__nav {
   transition: transform 200ms ease;
 }
 
+@media only screen and (max-width: 1199.98px) {
+  header .header__nav {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  header .header__nav .navbar-toggler .navbar-toggler-icon {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
 header .header__nav .navbar-brand .logo {
   width: 80px;
   height: auto;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  header .header__nav .navbar-brand .logo {
+    height: 45px;
+    width: 50px;
+    margin-left: 40px;
+  }
 }
 
 header .header__nav .navbar-nav .nav-item {
@@ -169,6 +203,12 @@ header .header__nav .navbar-nav .active::after {
   transform: scale(1);
 }
 
+@media only screen and (max-width: 1199.98px) {
+  header .navbar {
+    padding: 0;
+  }
+}
+
 header .sticky {
   position: fixed;
   top: 0;
@@ -176,6 +216,12 @@ header .sticky {
   width: 100%;
   z-index: 999;
   transform: translateY(-100%);
+}
+
+@media only screen and (max-width: 1199.98px) {
+  header .sticky {
+    display: none;
+  }
 }
 
 header .header__nav--1 {
@@ -231,6 +277,15 @@ header .header__nav--1 .navbar-nav .active::after {
 
 #carousel .carousel__content {
   padding-top: 4em;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  #carousel .carousel__content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 #carousel .carousel__content .carousel__left .title__headline {
@@ -240,6 +295,13 @@ header .header__nav--1 .navbar-nav .active::after {
   line-height: 19.8px;
   margin: 0px 0px 8.25px;
   text-align: left;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  #carousel .carousel__content .carousel__left .title__headline {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 #carousel .carousel__content .carousel__left .title__content {
@@ -284,6 +346,15 @@ header .header__nav--1 .navbar-nav .active::after {
   position: relative;
   background-color: #dcd1f3;
   padding-top: 40px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  #ourteam {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 #ourteam .card__item {
@@ -355,10 +426,25 @@ header .header__nav--1 .navbar-nav .active::after {
 
 #course {
   position: relative;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  #course {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 #course .course__content {
   padding: 60px 100px 40px 100px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  #course .course__content {
+    padding: 0;
+  }
 }
 
 #course .course__content .course__left img {
@@ -368,6 +454,12 @@ header .header__nav--1 .navbar-nav .active::after {
 
 #course .course__content .course__right {
   padding-left: 20px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  #course .course__content .course__right {
+    padding-top: 30px;
+  }
 }
 
 #course .course__content .course__right .course__form {
@@ -464,6 +556,15 @@ header .header__nav--1 .navbar-nav .active::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  #footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 #footer .footer__content {
