@@ -10,7 +10,10 @@
 //Mixin responeisive
 
 @mixin responsive($canvas) {
-  @if $canvas == sm {
+   @if $canvas == xs {
+   @media only screen and (max-width: $xs) { @content; } 
+  }
+  @else if $canvas == sm {
    @media only screen and (max-width: $sm) { @content; } 
   }
   @else if $canvas == md {
@@ -19,6 +22,7 @@
   @else if $canvas == lg {
    @media only screen and (max-width: $lg) { @content; } 
   }
+
 }
 
 
