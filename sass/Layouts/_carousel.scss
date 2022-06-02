@@ -15,18 +15,19 @@
             .title__headline {
                 @include styleText($fs-2, $color-blue-1, $fw-2);
                 line-height: 19.8px;
-                margin: 0px 0px 8.25px;
                 text-align: left;
-                @include responsive(lg) {
-                    padding-left: 30px;
-                    padding-right: 30px;
-                }
             }
 
             .title__content {
                 @include styleText($fs-4, $color-dark-2, $fw-2);
                 line-height: 68px;
                 text-align: left;
+                @include responsive(md){
+                    font-size: $fs-3;
+                } 
+                @include responsive(xs){
+                    font-size: $fs-3;
+                }
 
             }
 
@@ -49,6 +50,10 @@
         .image__top {
             height: 200px;
             width: 100%;
+        @include responsive(lg){
+            height: 110px;
+
+        }
 
         }
     }

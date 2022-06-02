@@ -16,23 +16,21 @@ header {
             padding-right: 30px;
         }
 
-        .navbar-toggler {
-            .navbar-toggler-icon {
-                @include responsive(lg) {
-                    position: absolute;
-                    top: 5px;
-                    left: 0;
-                    display: inline-block;
-                    width: 1.5em;
-                    height: 1.5em;
-                    vertical-align: middle;
-                    content: "";
-                    background: no-repeat center center;
-                    background-size: 100% 100%;
-                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-                }
-            }
-        }
+        // .navbar-toggler {
+        //     .navbar-toggler-icon {
+        //         @include responsive(lg) {
+        //             position: absolute;
+        //             top: 5px;
+        //             left: 0;
+        //             display: inline-block;
+        //             width: 2em;
+        //             height: 2em;
+        //             vertical-align: middle;
+        //             content: "";
+        //             background-size: 100% 100%;
+        //         }
+        //     }
+        // }
 
         .navbar-brand {
             .logo {
@@ -42,7 +40,6 @@ header {
                 @include responsive(lg) {
                     height: 45px;
                     width: 50px;
-                    margin-left: 40px;
                 }
             }
         }
@@ -57,6 +54,10 @@ header {
                     @include styleText($fs-1, $color-dark-1, $fw-2 );
                     line-height: 60px;
                     transition: all 0.2s;
+
+                    @include responsive(lg) {
+                        padding-top: 0;
+                    }
                 }
 
                 &:hover {
@@ -85,6 +86,9 @@ header {
                     transform: scale(0);
                     transition: all 0.5s;
 
+                    @include responsive(lg) {
+                        display: none;
+                    }
                 }
 
             }
@@ -98,6 +102,12 @@ header {
                     transform: scale(1);
                 }
 
+            }
+        }
+
+        .phone__navbar {
+            @include responsive(lg) {
+                margin-bottom: 20px;
             }
         }
     }
@@ -136,12 +146,17 @@ header {
         box-shadow: 0 0 10px 0 #cccccc80;
         transition: transform 200ms ease;
 
-        // @include responsive(lg) {
-        //     display: none;
-        // }
+        @include responsive(lg) {
+            position: relative;
+            
+        }
 
         .navbar-brand {
             display: none;
+
+            @include responsive(lg) {
+                display: block;
+            }
         }
 
         .navbar {
@@ -165,6 +180,10 @@ header {
                     display: block;
                     transform: scale(0);
                     transition: all 0.5s;
+
+                    @include responsive(lg) {
+                        display: none;
+                    }
 
                 }
 
