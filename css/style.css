@@ -130,22 +130,6 @@ header .header__nav {
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  header .header__nav .navbar-toggler .navbar-toggler-icon {
-    position: absolute;
-    top: 5px;
-    left: 0;
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    content: "";
-    background: no-repeat center center;
-    background-size: 100% 100%;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-}
-
 header .header__nav .navbar-brand .logo {
   width: 80px;
   height: auto;
@@ -155,7 +139,6 @@ header .header__nav .navbar-brand .logo {
   header .header__nav .navbar-brand .logo {
     height: 45px;
     width: 50px;
-    margin-left: 40px;
   }
 }
 
@@ -170,6 +153,12 @@ header .header__nav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   line-height: 60px;
   transition: all 0.2s;
+}
+
+@media only screen and (max-width: 1200px) {
+  header .header__nav .navbar-nav .nav-item .nav-link {
+    padding-top: 0;
+  }
 }
 
 header .header__nav .navbar-nav .nav-item:hover .nav-link {
@@ -195,12 +184,24 @@ header .header__nav .navbar-nav .nav-item::after {
   transition: all 0.5s;
 }
 
+@media only screen and (max-width: 1200px) {
+  header .header__nav .navbar-nav .nav-item::after {
+    display: none;
+  }
+}
+
 header .header__nav .navbar-nav .active .nav-link {
   color: #181818 !important;
 }
 
 header .header__nav .navbar-nav .active::after {
   transform: scale(1);
+}
+
+@media only screen and (max-width: 1200px) {
+  header .header__nav .phone__navbar {
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -236,8 +237,20 @@ header .header__nav--1 {
   transition: transform 200ms ease;
 }
 
+@media only screen and (max-width: 1200px) {
+  header .header__nav--1 {
+    position: relative;
+  }
+}
+
 header .header__nav--1 .navbar-brand {
   display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  header .header__nav--1 .navbar-brand {
+    display: block;
+  }
 }
 
 header .header__nav--1 .navbar {
@@ -261,6 +274,12 @@ header .header__nav--1 .navbar-nav .nav-item::after {
   display: block;
   transform: scale(0);
   transition: all 0.5s;
+}
+
+@media only screen and (max-width: 1200px) {
+  header .header__nav--1 .navbar-nav .nav-item::after {
+    display: none;
+  }
 }
 
 header .header__nav--1 .navbar-nav .active .nav-link {
@@ -293,15 +312,7 @@ header .header__nav--1 .navbar-nav .active::after {
   color: #b61984;
   font-weight: 600;
   line-height: 19.8px;
-  margin: 0px 0px 8.25px;
   text-align: left;
-}
-
-@media only screen and (max-width: 1200px) {
-  #carousel .carousel__content .carousel__left .title__headline {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
 }
 
 #carousel .carousel__content .carousel__left .title__content {
@@ -310,6 +321,18 @@ header .header__nav--1 .navbar-nav .active::after {
   font-weight: 600;
   line-height: 68px;
   text-align: left;
+}
+
+@media only screen and (max-width: 992px) {
+  #carousel .carousel__content .carousel__left .title__content {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #carousel .carousel__content .carousel__left .title__content {
+    font-size: 40px;
+  }
 }
 
 #carousel .carousel__content .carousel__right .carousel__image {
@@ -327,6 +350,12 @@ header .header__nav--1 .navbar-nav .active::after {
 #carousel .bg__image--top .image__top {
   height: 200px;
   width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #carousel .bg__image--top .image__top {
+    height: 110px;
+  }
 }
 
 #carousel .bg__image--center {
