@@ -3,6 +3,13 @@
 
     .carousel__content {
         padding-top: 4em;
+        padding-left: 150px;
+        padding-right: 150px;
+
+        @include responsive(lg) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
 
         .carousel__left {
             .title__headline {
@@ -10,6 +17,10 @@
                 line-height: 19.8px;
                 margin: 0px 0px 8.25px;
                 text-align: left;
+                @include responsive(lg) {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
             }
 
             .title__content {

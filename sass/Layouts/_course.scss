@@ -1,9 +1,18 @@
 #course {
     position: relative;
+    padding-left: 150px;
+    padding-right: 150px;
+
+    @include responsive(lg) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
     .course__content {
         padding: 60px 100px 40px 100px;
-
+        @include responsive(sm){
+            padding: 0; 
+        }
         .course__left {
             img {
                 width: 100%;
@@ -13,7 +22,9 @@
 
         .course__right {
             padding-left: 20px;
-
+            @include responsive(sm){
+                padding-top: 30px; 
+            }
             .course__form {
                 padding: 20px;
                 border-radius: 10px;
@@ -24,6 +35,9 @@
             .course__title {
                 @include styleText($fs-3, $color-dark-5, $fw-2);
                 margin-bottom: 50px;
+                @include responsive(xs){
+                    font-size: $fs-2;
+                }
             }
 
             .form-control {
