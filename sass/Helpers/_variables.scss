@@ -59,13 +59,14 @@ $bd-1: 2px;
 $bd-2: 8px;
 
 //break points
-$breakpoints: (
-    "extra-large": 1200px,
-    "large": 992px,
-    "medium": 768px,
-    "small": 576px,
-    "extra-large-down": 1199.98px,
-    "large-down": 991.98px,
-    "medium-down": 767.98px,
-    "small-down": 575.98px,
-);
+
+//Mixin responeisive
+// Small screen / phone
+$sx: 575.98px;
+// Medium screen / tablet
+$sm: 767.98px;
+// Large screen / desktop
+$md: 991.98px;
+// Extra large screen / wide desktop
+$lg: 1199.98px;
+
