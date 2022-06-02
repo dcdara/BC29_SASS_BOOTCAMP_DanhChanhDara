@@ -122,7 +122,7 @@ header .header__nav {
   transition: transform 200ms ease;
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1200px) {
   header .header__nav {
     position: relative;
     padding-left: 30px;
@@ -130,7 +130,7 @@ header .header__nav {
   }
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1200px) {
   header .header__nav .navbar-toggler .navbar-toggler-icon {
     position: absolute;
     top: 5px;
@@ -151,7 +151,7 @@ header .header__nav .navbar-brand .logo {
   height: auto;
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1200px) {
   header .header__nav .navbar-brand .logo {
     height: 45px;
     width: 50px;
@@ -203,7 +203,7 @@ header .header__nav .navbar-nav .active::after {
   transform: scale(1);
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1200px) {
   header .navbar {
     padding: 0;
   }
@@ -218,7 +218,7 @@ header .sticky {
   transform: translateY(-100%);
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1200px) {
   header .sticky {
     display: none;
   }
@@ -281,7 +281,7 @@ header .header__nav--1 .navbar-nav .active::after {
   padding-right: 150px;
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1200px) {
   #carousel .carousel__content {
     padding-left: 30px;
     padding-right: 30px;
@@ -297,7 +297,7 @@ header .header__nav--1 .navbar-nav .active::after {
   text-align: left;
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1200px) {
   #carousel .carousel__content .carousel__left .title__headline {
     padding-left: 30px;
     padding-right: 30px;
@@ -350,7 +350,7 @@ header .header__nav--1 .navbar-nav .active::after {
   padding-right: 150px;
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1200px) {
   #ourteam {
     padding-left: 30px;
     padding-right: 30px;
@@ -430,7 +430,7 @@ header .header__nav--1 .navbar-nav .active::after {
   padding-right: 150px;
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1200px) {
   #course {
     padding-left: 30px;
     padding-right: 30px;
@@ -441,7 +441,7 @@ header .header__nav--1 .navbar-nav .active::after {
   padding: 60px 100px 40px 100px;
 }
 
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 768px) {
   #course .course__content {
     padding: 0;
   }
@@ -456,7 +456,7 @@ header .header__nav--1 .navbar-nav .active::after {
   padding-left: 20px;
 }
 
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 768px) {
   #course .course__content .course__right {
     padding-top: 30px;
   }
@@ -474,6 +474,12 @@ header .header__nav--1 .navbar-nav .active::after {
   color: #191919;
   font-weight: 600;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 576px) {
+  #course .course__content .course__right .course__title {
+    font-size: 24px;
+  }
 }
 
 #course .course__content .course__right .form-control {
@@ -560,7 +566,7 @@ header .header__nav--1 .navbar-nav .active::after {
   padding-right: 150px;
 }
 
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 1200px) {
   #footer {
     padding-left: 30px;
     padding-right: 30px;
@@ -616,6 +622,13 @@ header .header__nav--1 .navbar-nav .active::after {
 #footer .footer__content h5 {
   margin-bottom: 30px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+  #footer .footer__content h5 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
 }
 
 #footer .footer__content .footer__link ul li {
