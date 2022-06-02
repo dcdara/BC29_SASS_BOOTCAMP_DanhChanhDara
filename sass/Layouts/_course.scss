@@ -8,6 +8,11 @@
         padding-right: 30px;
     }
 
+    @include responsive(xs) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .course__content {
         padding: 60px 100px 40px 100px;
         @include responsive(sm){
